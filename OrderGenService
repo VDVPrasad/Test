@@ -1,0 +1,11 @@
+public class OrderGenService {
+
+        @POST
+	@Path("/post")
+	@Consumes("application/orderGen")
+	public Response createOrder(Customer customer) {
+
+		String result = "Order created : " + customer;
+		return Response.status(201).entity(result).build();
+		
+	}
