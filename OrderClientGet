@@ -20,6 +20,8 @@ public class OrderClientGet {
 		if (conn.getResponseCode() != 200) {
 			throw new RuntimeException("Failed : HTTP error code : "
 					+ conn.getResponseCode());
+					
+			System.out.printlin("No Order details are returned or Http error")		
 		}
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(
