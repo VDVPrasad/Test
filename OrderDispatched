@@ -1,0 +1,11 @@
+public class OrderDispatchedService {
+
+        @POST
+	@Path("/post")
+	@Consumes("application/OrderDispatched")
+	public Response OrderDispatchedCustomer(Customer customer) {
+
+		String result = "dispatched order : " + customer;
+		return Response.status(201).entity(result).build();
+		
+	}
