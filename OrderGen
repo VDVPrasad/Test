@@ -1,0 +1,14 @@
+@Path("/bricks/order")
+public class OrderGen {
+
+        @POST
+	@Path("/post")
+	@Consumes("application/brikcs")
+	public Response createOrder(Customer customer) {
+
+		String result = "Order created : " + customer;
+		return Response.status(201).entity(result).build();
+		
+	}
+  
+	}
