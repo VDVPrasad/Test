@@ -1,0 +1,12 @@
+public class OrderUpdateService {
+
+        @POST
+	@Path("/post")
+	@Consumes("application/update")
+	public Response updateCustomer(Customer customer) {
+
+		String result = "Ustomer updated : " + customer;
+		return Response.status(201).entity(result).build();
+		
+	}
+  }
