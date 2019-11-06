@@ -19,7 +19,7 @@ public class OrderClientPost {
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Content-Type", "application/json");
 
-		String input = "{\"name\":Kiran,\"OrderId\":\"00001, \"}";
+		String input = "{\"name\":Kiran,\"OrderId\":\"00001, \"numberOfBricks\"100000 \"}";
 
 		OutputStream os = conn.getOutputStream();
 		os.write(input.getBytes());
